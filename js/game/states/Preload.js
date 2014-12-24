@@ -10,6 +10,8 @@ ClickTheFourElementsFsm.Preload.prototype = {
 
     this.load.setPreloadSprite(this.preloadBar);
 
+    this.load.spritesheet('elements', 'assets/images/elements-sprite.png', 250, 250);// We need to load something, otherwise, it seems that it doesn't work...
+
 
 
     this.load.onLoadComplete.add(this.onLoadComplete, this);
